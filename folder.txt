@@ -1,0 +1,18 @@
+to run this application you need to make a root folder lets say babel-fish
+files-app.py,requirements.txt,README.md will be in root directory
+files-index.html,result.html should be in stored inside "templates" folder which will be inside root folder(babel-fish)
+files-styles.css should be inside "static" folder which will be inside root folder(babel-fish)
+
+make sure you make all these folders such that structure should be:
+
+
+babel-fish/
+│
+├── app.py
+├── requirements.txt
+├── venv/
+├── templates/
+│   └── index.html
+├── static/  (optional if you add CSS later)
+
+ arrange your files in this structure then carry out the steps to run the application.
