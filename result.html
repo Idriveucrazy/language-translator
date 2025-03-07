@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Translation Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🎧 Translation Result</h1>
+        
+        <h3>📝 Original Transcription:</h3>
+        <p>{{ transcribed_text }}</p>
+        
+        <h3>🌍 Translated Text:</h3>
+        <p>{{ translated_text }}</p>
+        
+        <h3>🔊 Listen to Translated Audio:</h3>
+        <audio controls>
+            <source src="{{ url_for('static', filename=output_audio.split('static/')[1]) }}" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+
+        <a class="download-btn" href="{{ url_for('static', filename=output_audio.split('static/')[1]) }}" download>⬇️ Download Audio</a>
+    </div>
+</body>
+</html>
