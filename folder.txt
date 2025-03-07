@@ -1,3 +1,5 @@
+HOW TO ARRANGE THESE FILES IN VS CODE:
+
 to run this application you need to make a root folder lets say babel-fish
 files-app.py,requirements.txt,README.md will be in root directory
 files-index.html,result.html should be in stored inside "templates" folder which will be inside root folder(babel-fish)
